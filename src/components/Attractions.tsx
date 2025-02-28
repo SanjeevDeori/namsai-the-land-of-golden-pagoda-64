@@ -10,8 +10,8 @@ const attractions = [
   },
   {
     id: 2,
-    title: "Namsai Botanical Garden",
-    description: "Home to a diverse collection of indigenous plants and medicinal herbs, the botanical garden offers a peaceful retreat for nature lovers and researchers interested in the rich biodiversity of the region.",
+    title: "Namdapha National Park",
+    description: "A stunning biodiversity hotspot located near Namsai, this national park is home to diverse flora and fauna, including rare species of tigers, leopards, and hundreds of bird species. The lush rainforest and pristine rivers offer perfect opportunities for nature enthusiasts and adventure seekers.",
     image: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?q=80&w=1974",
   },
   {
@@ -22,8 +22,8 @@ const attractions = [
   },
   {
     id: 4,
-    title: "Namsai Museum",
-    description: "Showcasing the rich cultural heritage of the Tai-Khamti and other indigenous communities, the museum houses traditional artifacts, ancient manuscripts, and exhibits that narrate the fascinating history of the region.",
+    title: "Resorts",
+    description: "Experience luxury amidst nature in Namsai's picturesque resorts. These accommodations offer comfortable stays with modern amenities while being surrounded by the breathtaking landscapes of Arunachal Pradesh, perfect for relaxation and rejuvenation.",
     image: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?q=80&w=1974",
   },
 ];
