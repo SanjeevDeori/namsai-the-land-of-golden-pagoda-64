@@ -46,8 +46,8 @@ const Cultural = () => {
             <div className="rounded-2xl overflow-hidden shadow-lg relative">
               <div className="aspect-w-16 aspect-h-9 image-shine">
                 <img 
-                  src="https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=1974" 
-                  alt="Traditional Tai-Khamti festival" 
+                  src="/lovable-uploads/67ec9cc6-ada7-4700-b343-d6d8430b687c.png" 
+                  alt="Sangken Festival - water ritual with Buddha statue" 
                   className="w-full h-full object-cover"
                 />
               </div>

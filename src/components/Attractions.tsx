@@ -6,25 +6,25 @@ const attractions = [
     id: 1,
     title: "Golden Pagoda (Kongmu Kham)",
     description: "The most iconic landmark of Namsai, this magnificent Buddhist temple is adorned with gold and showcases exquisite Tai-Khamti architecture. The serene atmosphere and spiritual significance make it a must-visit destination.",
-    image: "https://images.unsplash.com/photo-1433086966358-54859d0ed716?q=80&w=1974",
+    image: "/lovable-uploads/9027b183-c3e6-4255-a5b6-284ae30d5b74.png",
   },
   {
     id: 2,
     title: "Namdapha National Park",
     description: "A stunning biodiversity hotspot located near Namsai, this national park is home to diverse flora and fauna, including rare species of tigers, leopards, and hundreds of bird species. The lush rainforest and pristine rivers offer perfect opportunities for nature enthusiasts and adventure seekers.",
-    image: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?q=80&w=1974",
+    image: "/lovable-uploads/2c7ed464-464c-4c06-97c4-265efab6219c.png",
   },
   {
     id: 3,
     title: "Parshuramkund",
     description: "A sacred site located on the Lohit River, Parshuramkund attracts thousands of pilgrims who come to take a holy dip in its waters, especially during Makar Sankranti in January.",
-    image: "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=1974",
+    image: "/lovable-uploads/45a33244-4b98-4554-903f-967f4c1effc8.png",
   },
   {
     id: 4,
     title: "Resorts",
     description: "Experience luxury amidst nature in Namsai's picturesque resorts. These accommodations offer comfortable stays with modern amenities while being surrounded by the breathtaking landscapes of Arunachal Pradesh, perfect for relaxation and rejuvenation.",
-    image: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?q=80&w=1974",
+    image: "/lovable-uploads/4c16c767-aac3-4ca4-b32f-526b0f3195ef.png",
   },
 ];
 
