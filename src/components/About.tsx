@@ -50,38 +50,38 @@ const About = () => {
               Namsai, a picturesque district in Arunachal Pradesh, is nestled amidst lush greenery and rolling hills in the eastern part of the state. It was carved out of the Lohit district in 2014 to become the 18th district of Arunachal Pradesh.
             </p>
             <p className="text-namsai-600 mb-4">
-              The district showcases a rich cultural diversity with communities like the Tai-Khamti, Singpho, Deori, and Moran who have preserved their unique cultural heritage for centuries. The Tai-Khamti people follow Theravada Buddhism, which has significantly influenced the cultural landscape of the region.
+              The district is primarily inhabited by the Tai-Khamti and Singpho communities, who have preserved their unique cultural heritage for centuries. The Tai-Khamti people follow Theravada Buddhism, which has significantly influenced the cultural landscape of the region.
             </p>
             <p className="text-namsai-600">
-              With its pristine natural beauty, rich biodiversity including elephants and exotic wildlife, and the serene Dihing River flowing through its landscapes, Namsai has emerged as an important destination for spiritual tourism and cultural exploration in Northeast India.
+              With its pristine natural beauty, rich biodiversity, and cultural significance, Namsai has emerged as an important destination for spiritual tourism and cultural exploration in Northeast India.
             </p>
           </div>
           
           <div className="relative rounded-2xl overflow-hidden shadow-xl opacity-0 animate-on-scroll">
             <div className="aspect-w-4 aspect-h-3 image-shine">
               <img 
-                src="https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=1974" 
-                alt="Elephants in Namsai forests" 
+                src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?q=80&w=1974" 
+                alt="Lush forests of Namsai" 
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
-              <h4 className="text-white font-serif text-xl font-medium">Rich Biodiversity of Namsai</h4>
-              <p className="text-white/80 text-sm mt-1">Home to majestic elephants and diverse wildlife</p>
+              <h4 className="text-white font-serif text-xl font-medium">Natural Beauty of Namsai</h4>
+              <p className="text-white/80 text-sm mt-1">Pristine forests and serene landscapes</p>
             </div>
           </div>
           
           <div className="relative rounded-2xl overflow-hidden shadow-xl md:order-3 opacity-0 animate-on-scroll">
             <div className="aspect-w-4 aspect-h-3 image-shine">
               <img 
-                src="https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?q=80&w=1974" 
-                alt="Dihing River flowing through Namsai" 
+                src="https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=1974" 
+                alt="Wildlife in Namsai" 
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
-              <h4 className="text-white font-serif text-xl font-medium">The Dihing River</h4>
-              <p className="text-white/80 text-sm mt-1">The lifeblood of Namsai's natural ecosystem</p>
+              <h4 className="text-white font-serif text-xl font-medium">Rich Biodiversity</h4>
+              <p className="text-white/80 text-sm mt-1">Home to diverse flora and fauna</p>
             </div>
           </div>
           

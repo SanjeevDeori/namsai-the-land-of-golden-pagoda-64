@@ -1,53 +1,42 @@
+
 import { useEffect, useRef, useState } from 'react';
 
 const images = [
   {
     id: 1,
-    src: "/lovable-uploads/67ec9cc6-ada7-4700-b343-d6d8430b687c.png",
-    alt: "Sangken Festival in Namsai",
-    caption: "Vibrant Sangken Festival celebrations",
+    src: "/lovable-uploads/8c7efdac-bd48-4281-87cb-7e3081738a0a.png",
+    alt: "Golden Buddha statue at the Golden Pagoda",
+    caption: "Golden Buddha statue at Kongmu Kham",
   },
   {
     id: 2,
-    src: "/lovable-uploads/2c7ed464-464c-4c06-97c4-265efab6219c.png",
-    alt: "Namdapha National Park",
-    caption: "Lush forests of Namdapha National Park",
+    src: "/lovable-uploads/618c1a9b-9e10-4cc0-8d3e-7050fd8749b2.png",
+    alt: "Golden Pagoda (Kongmu Kham) at night",
+    caption: "The magnificent Golden Pagoda illuminated at night",
   },
   {
     id: 3,
-    src: "/lovable-uploads/45a33244-4b98-4554-903f-967f4c1effc8.png",
-    alt: "Parshuramkund",
-    caption: "Sacred site of Parshuramkund",
+    src: "/lovable-uploads/85ad707d-88ed-4c5e-867e-b389c78cb475.png",
+    alt: "Traditional Namsai cuisine",
+    caption: "Local cuisine of Namsai",
   },
   {
     id: 4,
-    src: "/lovable-uploads/9027b183-c3e6-4255-a5b6-284ae30d5b74.png",
-    alt: "Golden Pagoda",
-    caption: "The magnificent Golden Pagoda",
+    src: "/lovable-uploads/a635fa32-6e6f-4b6f-a202-c561bc87c4a5.png",
+    alt: "Namdapha National Park river",
+    caption: "Crystal clear waters of Namdapha National Park",
   },
   {
     id: 5,
-    src: "/lovable-uploads/4c16c767-aac3-4ca4-b32f-526b0f3195ef.png",
-    alt: "Resorts in Namsai",
-    caption: "Luxurious resorts in Namsai",
+    src: "/lovable-uploads/0dd356ed-1abd-4b5e-a176-eb05d1898eee.png",
+    alt: "Golden Pagoda in daylight",
+    caption: "Golden Pagoda with its distinctive architecture",
   },
   {
     id: 6,
-    src: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?q=80&w=1974",
-    alt: "Dihing River flowing through Namsai",
-    caption: "The serene Dihing River",
-  },
-  {
-    id: 7,
-    src: "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=1974",
-    alt: "Elephants in Namsai forests",
-    caption: "Elephants in their natural habitat",
-  },
-  {
-    id: 8,
-    src: "https://images.unsplash.com/photo-1433086966358-54859d0ed716?q=80&w=1974",
-    alt: "Cultural festivals of Namsai",
-    caption: "Rich cultural celebrations",
+    src: "/lovable-uploads/cc981f8d-7490-4cb4-abd0-9e54692ee2c5.png",
+    alt: "Resort with overwater cottages in Namsai",
+    caption: "Luxurious overwater cottages at a Namsai resort",
   },
 ];
 
