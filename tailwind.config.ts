@@ -68,17 +68,17 @@ export default {
           ring: 'hsl(var(--sidebar-ring))'
         },
         namsai: {
-          50: '#f5f7f2',
-          100: '#e7ede3',
-          200: '#d2dcc9',
-          300: '#b3c3a5',
-          400: '#90a77b',
-          500: '#738c5d',
-          600: '#5a7149',
-          700: '#465a3c',
-          800: '#3a4833',
-          900: '#32402d',
-          950: '#1a2217',
+          50: '#f7f6f4',
+          100: '#eae5dc',
+          200: '#d7cebb',
+          300: '#c2b294',
+          400: '#ac9874',
+          500: '#9a845e',
+          600: '#86704e',
+          700: '#6e5a40',
+          800: '#5b4b37',
+          900: '#4c4032',
+          950: '#2b2318',
         }
       },
       borderRadius: {
@@ -151,7 +151,7 @@ export default {
         "image-shine": "image-shine 3s ease infinite"
       },
       backgroundImage: {
-        'hero-pattern': "url('https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?q=80&w=1974')",
+        'hero-pattern': "url('/lovable-uploads/67ec9cc6-ada7-4700-b343-d6d8430b687c.png')",
       },
       fontFamily: {
         'sans': ['Inter', 'system-ui', 'sans-serif'],

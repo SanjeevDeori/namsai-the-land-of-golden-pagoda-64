@@ -50,7 +50,7 @@ const About = () => {
               Namsai, a picturesque district in Arunachal Pradesh, is nestled amidst lush greenery and rolling hills in the eastern part of the state. It was carved out of the Lohit district in 2014 to become the 18th district of Arunachal Pradesh.
             </p>
             <p className="text-namsai-600 mb-4">
-              The district showcases a rich cultural diversity with communities like the Tai-Khamti, Singpho, Deori, and Moran who have preserved their unique cultural heritage for centuries. The Tai-Khamti people follow Theravada Buddhism, which has significantly influenced the cultural landscape of the region.
+              The district showcases a rich cultural diversity with communities like the Tai-Khamti, Singpho, Deori, Moran, and other indigenous tribes who have preserved their unique cultural heritage for centuries. The Tai-Khamti people follow Theravada Buddhism, which has significantly influenced the cultural landscape of the region.
             </p>
             <p className="text-namsai-600">
               With its pristine natural beauty, rich biodiversity including elephants and exotic wildlife, and the serene Dihing River flowing through its landscapes, Namsai has emerged as an important destination for spiritual tourism and cultural exploration in Northeast India.
