@@ -60,21 +60,21 @@ const About = () => {
           <div className="relative rounded-2xl overflow-hidden shadow-xl opacity-0 animate-on-scroll">
             <div className="aspect-w-4 aspect-h-3 image-shine">
               <img 
-                src="/lovable-uploads/67ec9cc6-ada7-4700-b343-d6d8430b687c.png" 
-                alt="Sangken Festival in Namsai" 
+                src="https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=1974" 
+                alt="Elephants in Namsai forests" 
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
-              <h4 className="text-white font-serif text-xl font-medium">Sangken Festival in Namsai</h4>
-              <p className="text-white/80 text-sm mt-1">Cultural celebrations of the Tai-Khamti people</p>
+              <h4 className="text-white font-serif text-xl font-medium">Rich Biodiversity of Namsai</h4>
+              <p className="text-white/80 text-sm mt-1">Home to majestic elephants and diverse wildlife</p>
             </div>
           </div>
           
           <div className="relative rounded-2xl overflow-hidden shadow-xl md:order-3 opacity-0 animate-on-scroll">
             <div className="aspect-w-4 aspect-h-3 image-shine">
               <img 
-                src="/lovable-uploads/181a7f41-00bc-4f9e-bb70-547089d9ff91.png" 
+                src="https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?q=80&w=1974" 
                 alt="Dihing River flowing through Namsai" 
                 className="w-full h-full object-cover"
               />

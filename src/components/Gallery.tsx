@@ -28,15 +28,27 @@ const images = [
   {
     id: 5,
     src: "/lovable-uploads/4c16c767-aac3-4ca4-b32f-526b0f3195ef.png",
-    alt: "Luxury Resorts in Namsai",
-    caption: "Luxurious accommodations in Namsai",
+    alt: "Resorts in Namsai",
+    caption: "Luxurious resorts in Namsai",
   },
   {
     id: 6,
-    src: "/lovable-uploads/181a7f41-00bc-4f9e-bb70-547089d9ff91.png",
-    alt: "Riverside Resort in Namsai",
-    caption: "Serene riverside resort with traditional huts",
-  }
+    src: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?q=80&w=1974",
+    alt: "Dihing River flowing through Namsai",
+    caption: "The serene Dihing River",
+  },
+  {
+    id: 7,
+    src: "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=1974",
+    alt: "Elephants in Namsai forests",
+    caption: "Elephants in their natural habitat",
+  },
+  {
+    id: 8,
+    src: "https://images.unsplash.com/photo-1433086966358-54859d0ed716?q=80&w=1974",
+    alt: "Cultural festivals of Namsai",
+    caption: "Rich cultural celebrations",
+  },
 ];
 
 const Gallery = () => {
@@ -82,6 +94,7 @@ const Gallery = () => {
     setSelectedImage(newIndex);
   };
 
+  // Handle keyboard navigation
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (selectedImage === null) return;
@@ -155,6 +168,7 @@ const Gallery = () => {
         </div>
       </div>
       
+      {/* Lightbox */}
       {selectedImage !== null && (
         <div className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4" onClick={closeLightbox}>
           <div className="relative max-w-6xl w-full h-full flex items-center justify-center" onClick={(e) => e.stopPropagation()}>
