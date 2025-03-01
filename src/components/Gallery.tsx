@@ -1,42 +1,53 @@
-
 import { useEffect, useRef, useState } from 'react';
 
 const images = [
   {
     id: 1,
-    src: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?q=80&w=1974",
-    alt: "River between mountains in Namsai",
-    caption: "The serene rivers flowing through Namsai",
+    src: "/lovable-uploads/67ec9cc6-ada7-4700-b343-d6d8430b687c.png",
+    alt: "Sangken Festival in Namsai",
+    caption: "Vibrant Sangken Festival celebrations",
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=1974",
-    alt: "Wildlife in Namsai",
-    caption: "Rich biodiversity in Namsai forests",
+    src: "/lovable-uploads/2c7ed464-464c-4c06-97c4-265efab6219c.png",
+    alt: "Namdapha National Park",
+    caption: "Lush forests of Namdapha National Park",
   },
   {
     id: 3,
-    src: "https://images.unsplash.com/photo-1433086966358-54859d0ed716?q=80&w=1974",
+    src: "/lovable-uploads/45a33244-4b98-4554-903f-967f4c1effc8.png",
+    alt: "Parshuramkund",
+    caption: "Sacred site of Parshuramkund",
+  },
+  {
+    id: 4,
+    src: "/lovable-uploads/9027b183-c3e6-4255-a5b6-284ae30d5b74.png",
     alt: "Golden Pagoda",
     caption: "The magnificent Golden Pagoda",
   },
   {
-    id: 4,
-    src: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?q=80&w=1974",
-    alt: "Pine forests in Namsai",
-    caption: "Lush pine forests surrounding Namsai",
-  },
-  {
     id: 5,
-    src: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?q=80&w=1974",
-    alt: "Traditional festival in Namsai",
-    caption: "Vibrant cultural celebrations",
+    src: "/lovable-uploads/4c16c767-aac3-4ca4-b32f-526b0f3195ef.png",
+    alt: "Resorts in Namsai",
+    caption: "Luxurious resorts in Namsai",
   },
   {
     id: 6,
+    src: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?q=80&w=1974",
+    alt: "Dihing River flowing through Namsai",
+    caption: "The serene Dihing River",
+  },
+  {
+    id: 7,
     src: "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=1974",
-    alt: "Tai-Khamti architecture",
-    caption: "Traditional architecture in Namsai",
+    alt: "Elephants in Namsai forests",
+    caption: "Elephants in their natural habitat",
+  },
+  {
+    id: 8,
+    src: "https://images.unsplash.com/photo-1433086966358-54859d0ed716?q=80&w=1974",
+    alt: "Cultural festivals of Namsai",
+    caption: "Rich cultural celebrations",
   },
 ];
 
