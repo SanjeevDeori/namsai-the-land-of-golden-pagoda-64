@@ -90,10 +90,12 @@ const About = () => {
               Cultural Diversity
             </h3>
             <p className="text-namsai-600 mb-4">
-              The history of Namsai is deeply intertwined with the migration of diverse ethnic communities. The Tai-Khamti people came from the Kingdom of Siam (present-day Thailand), while the Singpho, Deori, and Moran communities have their own unique origins and traditions.
+              The history of Namsai is deeply intertwined with the migration of diverse ethnic communities. The Tai-Khamti people, known for their Theravada Buddhist heritage, came from the Kingdom of Siam (present-day Thailand) and brought with them a rich tradition of script, literature, and craftsmanship. They are skilled in agriculture and are known for their unique martial art, "Khamti Lakawn," as well as their vibrant festivals like Sangken, the Buddhist New Year.
             </p>
             <p className="text-namsai-600 mb-4">
-              Each community contributes to the rich cultural tapestry of Namsai. The Deori community is known for their agricultural expertise and colorful festivals, while the Moran people have preserved their ancient traditions and distinct cultural practices through generations.
+              The Singpho community, closely related to the Kachin people of Myanmar, has a distinct identity rooted in animistic beliefs and nature worship. They are renowned for their warrior traditions and played a significant role in the early tea trade in Assam. The Singphos also maintain their cultural heritage through their unique language, textiles, and traditional governance systems.
+             
+              Each community contributes to the rich cultural tapestry of Namsai.The Deori people are known for their agricultural expertise, colorful festivals like Ibaku Bisu, and rich oral traditions. Their deep connection to nature and ancestral customs reflects their strong cultural identity, while the Moran people have preserved their ancient traditions and distinct cultural practices through generations.
             </p>
             <p className="text-namsai-600">
               Today, Namsai serves as an important cultural bridge, where these diverse communities live harmoniously while preserving their unique traditions, making it a fascinating destination for those interested in the rich cultural tapestry of Northeast India.
