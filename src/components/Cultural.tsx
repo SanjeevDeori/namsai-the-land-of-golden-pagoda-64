@@ -99,6 +99,24 @@ const Cultural = () => {
           </div>
         </div>
         
+        <div className="mt-16 bg-white rounded-2xl p-8 shadow-lg opacity-0 animate-on-scroll">
+          <h3 className="text-2xl font-serif font-semibold text-namsai-800 mb-6">Cultural Diversity</h3>
+          <div className="prose prose-lg max-w-none text-namsai-600">
+            <p>
+              The history of Namsai is deeply intertwined with the migration of diverse ethnic communities. The Tai-Khamti people, known for their Theravada Buddhist heritage, came from the Kingdom of Siam (present-day Thailand) and brought with them a rich tradition of script, literature, and craftsmanship. They are skilled in agriculture and are known for their unique martial art, "Khamti Lakawn," as well as their vibrant festivals like Sangken, the Buddhist New Year.
+            </p>
+            <p className="mt-4">
+              The Singpho community, closely related to the Kachin people of Myanmar, has a distinct identity rooted in animistic beliefs and nature worship. They are renowned for their warrior traditions and played a significant role in the early tea trade in Assam. The Singphos also maintain their cultural heritage through their unique language, textiles, and traditional governance systems.
+            </p>
+            <p className="mt-4">
+              Each community contributes to the rich cultural tapestry of Namsai. The Deori people are celebrated for their agricultural expertise and colorful festivals, while the Moran people have preserved their ancient traditions and distinct cultural practices through generations.
+            </p>
+            <p className="mt-4">
+              Today, Namsai serves as an important cultural bridge, where these diverse communities live harmoniously while preserving their unique traditions. This makes it a fascinating destination for those interested in the rich cultural diversity of Northeast India.
+            </p>
+          </div>
+        </div>
+        
         <div className="mt-16 opacity-0 animate-on-scroll">
           <div className="bg-white rounded-2xl p-8 shadow-lg">
             <div className="flex flex-col md:flex-row items-center">
