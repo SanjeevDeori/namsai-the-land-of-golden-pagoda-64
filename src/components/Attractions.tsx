@@ -6,25 +6,25 @@ const attractions = [
     id: 1,
     title: "Golden Pagoda (Kongmu Kham)",
     description: "The most iconic landmark of Namsai, this magnificent Buddhist temple is adorned with gold and showcases exquisite Tai-Khamti architecture. The serene atmosphere and spiritual significance make it a must-visit destination.",
-    image: "/lovable-uploads/969dc2c3-c3ad-43c9-b2db-1d01425fb936.png",
+    image: "/lovable-uploads/9027b183-c3e6-4255-a5b6-284ae30d5b74.png",
   },
   {
     id: 2,
     title: "Namdapha National Park",
     description: "A stunning biodiversity hotspot located near Namsai, this national park is home to diverse flora and fauna, including rare species of tigers, leopards, and hundreds of bird species. The lush rainforest and pristine rivers offer perfect opportunities for nature enthusiasts and adventure seekers.",
-    image: "/lovable-uploads/97eda07f-f84f-444b-8b0e-c425443a2923.png",
+    image: "/lovable-uploads/2c7ed464-464c-4c06-97c4-265efab6219c.png",
   },
   {
     id: 3,
     title: "Parshuramkund",
     description: "A sacred site located on the Lohit River, Parshuramkund attracts thousands of pilgrims who come to take a holy dip in its waters, especially during Makar Sankranti in January.",
-    image: "/lovable-uploads/fde0a383-a750-4aa8-a8fd-44c48be69a22.png",
+    image: "/lovable-uploads/45a33244-4b98-4554-903f-967f4c1effc8.png",
   },
   {
     id: 4,
-    title: "Dihing River",
-    description: "Lifeblood of the region's ecosystem, the Dihing River flows through Namsai offering breathtaking views and supporting the local biodiversity. Its crystal clear waters and surrounding lush greenery make it a perfect spot for nature lovers and photographers.",
-    image: "/lovable-uploads/eef834b3-d7f0-4fd4-8405-baeb3ae8507f.png",
+    title: "Resorts",
+    description: "Experience luxury amidst nature in Namsai's picturesque resorts. These accommodations offer comfortable stays with modern amenities while being surrounded by the breathtaking landscapes of Arunachal Pradesh, perfect for relaxation and rejuvenation.",
+    image: "/lovable-uploads/4c16c767-aac3-4ca4-b32f-526b0f3195ef.png",
   },
 ];
 

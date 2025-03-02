@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -68,17 +67,17 @@ export default {
           ring: 'hsl(var(--sidebar-ring))'
         },
         namsai: {
-          50: '#f5f7f2',
-          100: '#e7ede3',
-          200: '#d2dcc9',
-          300: '#b3c3a5',
-          400: '#90a77b',
-          500: '#738c5d',
-          600: '#5a7149',
-          700: '#465a3c',
-          800: '#3a4833',
-          900: '#32402d',
-          950: '#1a2217',
+          50: '#f0f8ff',
+          100: '#e0f0fe',
+          200: '#bae2fd',
+          300: '#7dcefb',
+          400: '#48b8f6',
+          500: '#1e9de8',
+          600: '#0a7cc5',
+          700: '#0965a0',
+          800: '#0c5685',
+          900: '#0f476f',
+          950: '#0a2e4a',
         }
       },
       borderRadius: {
@@ -151,7 +150,7 @@ export default {
         "image-shine": "image-shine 3s ease infinite"
       },
       backgroundImage: {
-        'hero-pattern': "url('https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?q=80&w=1974')",
+        'hero-pattern': "url('/lovable-uploads/67ec9cc6-ada7-4700-b343-d6d8430b687c.png')",
       },
       fontFamily: {
         'sans': ['Inter', 'system-ui', 'sans-serif'],

@@ -2,9 +2,9 @@
 const Hero = () => {
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/lovable-uploads/969dc2c3-c3ad-43c9-b2db-1d01425fb936.png')" }}>
+      <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('/lovable-uploads/67ec9cc6-ada7-4700-b343-d6d8430b687c.png')` }}>
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="absolute inset-0 bg-black/40"></div>
       </div>
       
       <div className="relative h-full flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8">

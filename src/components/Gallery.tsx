@@ -1,43 +1,42 @@
-
 import { useEffect, useRef, useState } from 'react';
 
 const images = [
   {
     id: 1,
-    src: "/lovable-uploads/d9bc7569-a034-41b2-833b-fb02e8c06b2c.png",
-    alt: "Golden Buddha statue at the Golden Pagoda",
-    caption: "Golden Buddha statue at Kongmu Kham",
+    src: "/lovable-uploads/67ec9cc6-ada7-4700-b343-d6d8430b687c.png",
+    alt: "Sangken Festival in Namsai",
+    caption: "Vibrant Sangken Festival celebrations",
   },
   {
     id: 2,
-    src: "/lovable-uploads/9a36f8f5-8a22-428a-99cd-c7b55445a3d3.png",
-    alt: "Golden Pagoda (Kongmu Kham) at night",
-    caption: "The magnificent Golden Pagoda illuminated at night",
+    src: "/lovable-uploads/2c7ed464-464c-4c06-97c4-265efab6219c.png",
+    alt: "Namdapha National Park",
+    caption: "Lush forests of Namdapha National Park",
   },
   {
     id: 3,
-    src: "/lovable-uploads/c5dc96f2-9adc-443c-b259-ffa75c8c0b93.png",
-    alt: "Traditional Namsai cuisine",
-    caption: "Local cuisine of Namsai",
+    src: "/lovable-uploads/45a33244-4b98-4554-903f-967f4c1effc8.png",
+    alt: "Parshuramkund",
+    caption: "Sacred site of Parshuramkund",
   },
   {
     id: 4,
-    src: "/lovable-uploads/eef834b3-d7f0-4fd4-8405-baeb3ae8507f.png",
-    alt: "Dihing River flowing through lush forests",
-    caption: "Dihing River: Lifeblood of the region's ecosystem",
+    src: "/lovable-uploads/9027b183-c3e6-4255-a5b6-284ae30d5b74.png",
+    alt: "Golden Pagoda",
+    caption: "The magnificent Golden Pagoda",
   },
   {
     id: 5,
-    src: "/lovable-uploads/a821a661-cd28-43f5-bbea-5192f054f456.png",
-    alt: "Golden Pagoda in daylight",
-    caption: "Golden Pagoda with its distinctive architecture",
+    src: "/lovable-uploads/4c16c767-aac3-4ca4-b32f-526b0f3195ef.png",
+    alt: "Luxury Resorts in Namsai",
+    caption: "Luxurious accommodations in Namsai",
   },
   {
     id: 6,
-    src: "/lovable-uploads/fde0a383-a750-4aa8-a8fd-44c48be69a22.png",
-    alt: "Parshuramkund on the Lohit River",
-    caption: "Parshuramkund - Sacred pilgrimage site",
-  },
+    src: "/lovable-uploads/181a7f41-00bc-4f9e-bb70-547089d9ff91.png",
+    alt: "Riverside Resort in Namsai",
+    caption: "Serene riverside resort with traditional huts",
+  }
 ];
 
 const Gallery = () => {
@@ -83,7 +82,6 @@ const Gallery = () => {
     setSelectedImage(newIndex);
   };
 
-  // Handle keyboard navigation
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (selectedImage === null) return;
@@ -157,7 +155,6 @@ const Gallery = () => {
         </div>
       </div>
       
-      {/* Lightbox */}
       {selectedImage !== null && (
         <div className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4" onClick={closeLightbox}>
           <div className="relative max-w-6xl w-full h-full flex items-center justify-center" onClick={(e) => e.stopPropagation()}>

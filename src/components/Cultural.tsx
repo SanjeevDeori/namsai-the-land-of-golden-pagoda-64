@@ -37,7 +37,7 @@ const Cultural = () => {
             Vibrant Traditions of Namsai
           </h2>
           <p className="text-namsai-600 text-lg">
-            Experience the rich cultural tapestry of the Tai-Khamti, Singpho, Deori, and Moran communities
+            Experience the rich cultural tapestry of the Tai-Khamti and Singpho communities
           </p>
         </div>
         
@@ -46,15 +46,15 @@ const Cultural = () => {
             <div className="rounded-2xl overflow-hidden shadow-lg relative">
               <div className="aspect-w-16 aspect-h-9 image-shine">
                 <img 
-                  src="/lovable-uploads/cac74e5c-6c67-4bd5-b2bf-b2bd3bec86b0.png" 
-                  alt="Sangken Festival - Water ritual with Buddha statue" 
+                  src="/lovable-uploads/67ec9cc6-ada7-4700-b343-d6d8430b687c.png" 
+                  alt="Sangken Festival - water ritual with Buddha statue" 
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
                 <h3 className="text-white font-serif text-2xl font-semibold mb-2">Festivals & Celebrations</h3>
                 <p className="text-white/90">
-                  The Sangken Festival (Tai New Year) is the most important celebration, featuring water rituals, traditional dances, and community feasts. Other communities celebrate their unique festivals throughout the year, showcasing the diverse cultural heritage of the region.
+                  The Sangken Festival (Tai New Year) is the most important celebration, featuring water rituals, traditional dances, and community feasts.
                 </p>
               </div>
             </div>
@@ -67,9 +67,9 @@ const Cultural = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-serif font-semibold text-namsai-800 mb-3">Religious Diversity</h3>
+              <h3 className="text-xl font-serif font-semibold text-namsai-800 mb-3">Buddhist Heritage</h3>
               <p className="text-namsai-600">
-                While Theravada Buddhism is predominant among the Tai-Khamti, other communities like the Deori practice their traditional animistic beliefs, and the Singpho and Moran have their own unique spiritual practices that have been preserved for generations.
+                Theravada Buddhism has deeply influenced the culture, with numerous monasteries (wats) and pagodas dotting the landscape. Monks play a crucial role in preserving traditional teachings and practices.
               </p>
             </div>
             
@@ -81,7 +81,7 @@ const Cultural = () => {
               </div>
               <h3 className="text-xl font-serif font-semibold text-namsai-800 mb-3">Traditional Arts</h3>
               <p className="text-namsai-600">
-                Each community excels in distinct art forms. The Tai-Khamti are known for intricate patterns in weaving, the Singpho for bamboo craft, the Deori for colorful textiles with geometric patterns, and the Moran for traditional wood carving and musical instruments.
+                The communities excel in weaving intricate patterns, wood carving, and traditional music played on instruments like khap (stringed instrument) and the phom (drum).
               </p>
             </div>
             
@@ -93,7 +93,7 @@ const Cultural = () => {
               </div>
               <h3 className="text-xl font-serif font-semibold text-namsai-800 mb-3">Culinary Traditions</h3>
               <p className="text-namsai-600">
-                The cuisine features sticky rice, fresh herbs, and dishes like khao soi (rice noodle soup) from the Tai-Khamti, smoked meat preparations from the Singpho, fish-based dishes from the Deori, and unique fermented preparations from the Moran community.
+                The cuisine features sticky rice, fresh herbs, and dishes like khao soi (rice noodle soup) and mah (fermented fish). Local teas and rice wines are important cultural beverages.
               </p>
             </div>
           </div>
