@@ -4,39 +4,39 @@ import { useEffect, useRef, useState } from 'react';
 const images = [
   {
     id: 1,
-    src: "/lovable-uploads/8c7efdac-bd48-4281-87cb-7e3081738a0a.png",
+    src: "/lovable-uploads/d9bc7569-a034-41b2-833b-fb02e8c06b2c.png",
     alt: "Golden Buddha statue at the Golden Pagoda",
     caption: "Golden Buddha statue at Kongmu Kham",
   },
   {
     id: 2,
-    src: "/lovable-uploads/618c1a9b-9e10-4cc0-8d3e-7050fd8749b2.png",
+    src: "/lovable-uploads/9a36f8f5-8a22-428a-99cd-c7b55445a3d3.png",
     alt: "Golden Pagoda (Kongmu Kham) at night",
     caption: "The magnificent Golden Pagoda illuminated at night",
   },
   {
     id: 3,
-    src: "/lovable-uploads/85ad707d-88ed-4c5e-867e-b389c78cb475.png",
+    src: "/lovable-uploads/c5dc96f2-9adc-443c-b259-ffa75c8c0b93.png",
     alt: "Traditional Namsai cuisine",
     caption: "Local cuisine of Namsai",
   },
   {
     id: 4,
-    src: "/lovable-uploads/a635fa32-6e6f-4b6f-a202-c561bc87c4a5.png",
-    alt: "Namdapha National Park river",
-    caption: "Crystal clear waters of Namdapha National Park",
+    src: "/lovable-uploads/eef834b3-d7f0-4fd4-8405-baeb3ae8507f.png",
+    alt: "Dihing River flowing through lush forests",
+    caption: "Dihing River: Lifeblood of the region's ecosystem",
   },
   {
     id: 5,
-    src: "/lovable-uploads/0dd356ed-1abd-4b5e-a176-eb05d1898eee.png",
+    src: "/lovable-uploads/a821a661-cd28-43f5-bbea-5192f054f456.png",
     alt: "Golden Pagoda in daylight",
     caption: "Golden Pagoda with its distinctive architecture",
   },
   {
     id: 6,
-    src: "/lovable-uploads/cc981f8d-7490-4cb4-abd0-9e54692ee2c5.png",
-    alt: "Resort with overwater cottages in Namsai",
-    caption: "Luxurious overwater cottages at a Namsai resort",
+    src: "/lovable-uploads/fde0a383-a750-4aa8-a8fd-44c48be69a22.png",
+    alt: "Parshuramkund on the Lohit River",
+    caption: "Parshuramkund - Sacred pilgrimage site",
   },
 ];
 

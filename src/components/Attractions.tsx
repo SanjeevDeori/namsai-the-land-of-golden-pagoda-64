@@ -6,25 +6,25 @@ const attractions = [
     id: 1,
     title: "Golden Pagoda (Kongmu Kham)",
     description: "The most iconic landmark of Namsai, this magnificent Buddhist temple is adorned with gold and showcases exquisite Tai-Khamti architecture. The serene atmosphere and spiritual significance make it a must-visit destination.",
-    image: "/lovable-uploads/0dd356ed-1abd-4b5e-a176-eb05d1898eee.png",
+    image: "/lovable-uploads/969dc2c3-c3ad-43c9-b2db-1d01425fb936.png",
   },
   {
     id: 2,
     title: "Namdapha National Park",
     description: "A stunning biodiversity hotspot located near Namsai, this national park is home to diverse flora and fauna, including rare species of tigers, leopards, and hundreds of bird species. The lush rainforest and pristine rivers offer perfect opportunities for nature enthusiasts and adventure seekers.",
-    image: "/lovable-uploads/a635fa32-6e6f-4b6f-a202-c561bc87c4a5.png",
+    image: "/lovable-uploads/97eda07f-f84f-444b-8b0e-c425443a2923.png",
   },
   {
     id: 3,
     title: "Parshuramkund",
     description: "A sacred site located on the Lohit River, Parshuramkund attracts thousands of pilgrims who come to take a holy dip in its waters, especially during Makar Sankranti in January.",
-    image: "/lovable-uploads/d433c6a8-dc68-4e90-8c30-a8e4180a6a00.png",
+    image: "/lovable-uploads/fde0a383-a750-4aa8-a8fd-44c48be69a22.png",
   },
   {
     id: 4,
-    title: "Resorts",
-    description: "Experience luxury amidst nature in Namsai's picturesque resorts. These accommodations offer comfortable stays with modern amenities while being surrounded by the breathtaking landscapes of Arunachal Pradesh, perfect for relaxation and rejuvenation.",
-    image: "/lovable-uploads/cc981f8d-7490-4cb4-abd0-9e54692ee2c5.png",
+    title: "Dihing River",
+    description: "Lifeblood of the region's ecosystem, the Dihing River flows through Namsai offering breathtaking views and supporting the local biodiversity. Its crystal clear waters and surrounding lush greenery make it a perfect spot for nature lovers and photographers.",
+    image: "/lovable-uploads/eef834b3-d7f0-4fd4-8405-baeb3ae8507f.png",
   },
 ];
 
