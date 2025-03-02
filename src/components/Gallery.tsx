@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 const images = [
   {
     id: 1,
-    src: "/lovable-uploads/d9bc7569-a034-41b2-833b-fb02e8c06b2c.png",
+    src: "/lovable-uploads/0e9193ce-2476-4e64-9f0c-ce8d1407455b.png",
     alt: "Golden Buddha statue at the Golden Pagoda",
     caption: "Golden Buddha statue at Kongmu Kham",
   },

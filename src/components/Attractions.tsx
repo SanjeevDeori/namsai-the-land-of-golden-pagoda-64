@@ -12,19 +12,19 @@ const attractions = [
     id: 2,
     title: "Namdapha National Park",
     description: "A stunning biodiversity hotspot located near Namsai, this national park is home to diverse flora and fauna, including rare species of tigers, leopards, and hundreds of bird species. The lush rainforest and pristine rivers offer perfect opportunities for nature enthusiasts and adventure seekers.",
-    image: "/lovable-uploads/97eda07f-f84f-444b-8b0e-c425443a2923.png",
+    image: "/lovable-uploads/fec4af02-9f78-4a2f-969c-22c83f83a2ee.png",
   },
   {
     id: 3,
     title: "Parshuramkund",
     description: "A sacred site located on the Lohit River, Parshuramkund attracts thousands of pilgrims who come to take a holy dip in its waters, especially during Makar Sankranti in January.",
-    image: "/lovable-uploads/fde0a383-a750-4aa8-a8fd-44c48be69a22.png",
+    image: "/lovable-uploads/902fb122-a32b-4392-9770-6a7f5ae9167a.png",
   },
   {
     id: 4,
-    title: "Dihing River",
-    description: "Lifeblood of the region's ecosystem, the Dihing River flows through Namsai offering breathtaking views and supporting the local biodiversity. Its crystal clear waters and surrounding lush greenery make it a perfect spot for nature lovers and photographers.",
-    image: "/lovable-uploads/eef834b3-d7f0-4fd4-8405-baeb3ae8507f.png",
+    title: "Riverside Resorts",
+    description: "Experience luxurious relaxation amidst nature at the riverside resorts of Namsai. These eco-friendly accommodations offer stunning views, traditional architecture, and an authentic experience of local hospitality while enjoying the serene riverside environment.",
+    image: "/lovable-uploads/9d6bb13c-2c12-40f5-ad32-3ccf0bc17a5e.png",
   },
 ];
 
