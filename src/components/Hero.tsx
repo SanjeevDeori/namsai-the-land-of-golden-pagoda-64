@@ -1,5 +1,9 @@
 
+import { useTheme } from '../hooks/useTheme';
+
 const Hero = () => {
+  const { theme } = useTheme();
+  
   return (
     <section className="relative h-screen w-full overflow-hidden">
       <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/lovable-uploads/969dc2c3-c3ad-43c9-b2db-1d01425fb936.png')" }}>
@@ -32,8 +36,8 @@ const Hero = () => {
         </div>
       </div>
       
-      {/* Scroll indicator */}
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center opacity-0 animate-slide-in animate-delay-500">
+      {/* Scroll indicator - Centered */}
+      <div className="absolute bottom-10 left-0 right-0 flex flex-col items-center opacity-0 animate-slide-in animate-delay-500">
         <span className="text-white text-sm mb-2">Scroll to discover</span>
         <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
           <div className="w-1 h-2 bg-white rounded-full mt-2 animate-[bounce_1.5s_infinite]"></div>

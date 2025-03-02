@@ -4,27 +4,27 @@ import { useEffect, useRef, useState } from 'react';
 const images = [
   {
     id: 1,
-    src: "/lovable-uploads/0e9193ce-2476-4e64-9f0c-ce8d1407455b.png",
-    alt: "Golden Buddha statue at the Golden Pagoda",
-    caption: "Golden Buddha statue at Kongmu Kham",
-  },
-  {
-    id: 2,
-    src: "/lovable-uploads/9a36f8f5-8a22-428a-99cd-c7b55445a3d3.png",
-    alt: "Golden Pagoda (Kongmu Kham) at night",
+    src: "/lovable-uploads/a1e0c0f0-07fa-4532-85d7-4111421c04a6.png",
+    alt: "Golden Pagoda illuminated at night",
     caption: "The magnificent Golden Pagoda illuminated at night",
   },
   {
+    id: 2,
+    src: "/lovable-uploads/30dc4606-508c-4e7c-a1cf-4bd340635538.png",
+    alt: "Dihing River flowing through forests",
+    caption: "Dihing River: Lifeblood of the region's ecosystem",
+  },
+  {
     id: 3,
-    src: "/lovable-uploads/c5dc96f2-9adc-443c-b259-ffa75c8c0b93.png",
-    alt: "Traditional Namsai cuisine",
-    caption: "Local cuisine of Namsai",
+    src: "/lovable-uploads/dec22237-99fa-4614-983e-17f0f5b574e4.png",
+    alt: "Parshuramkund on the Lohit River",
+    caption: "Parshuramkund - Sacred pilgrimage site",
   },
   {
     id: 4,
-    src: "/lovable-uploads/eef834b3-d7f0-4fd4-8405-baeb3ae8507f.png",
-    alt: "Dihing River flowing through lush forests",
-    caption: "Dihing River: Lifeblood of the region's ecosystem",
+    src: "/lovable-uploads/c5dc96f2-9adc-443c-b259-ffa75c8c0b93.png",
+    alt: "Traditional Namsai cuisine",
+    caption: "Local cuisine of Namsai",
   },
   {
     id: 5,
@@ -34,9 +34,9 @@ const images = [
   },
   {
     id: 6,
-    src: "/lovable-uploads/fde0a383-a750-4aa8-a8fd-44c48be69a22.png",
-    alt: "Parshuramkund on the Lohit River",
-    caption: "Parshuramkund - Sacred pilgrimage site",
+    src: "/lovable-uploads/0e9193ce-2476-4e64-9f0c-ce8d1407455b.png",
+    alt: "Golden Buddha statue at Golden Pagoda",
+    caption: "Golden Buddha statue at Kongmu Kham",
   },
 ];
 

@@ -156,4 +156,30 @@
   .scrollbar-hidden::-webkit-scrollbar {
     display: none;
   }
+  
+  /* Dark mode transitions */
+  .dark-transition {
+    @apply transition-colors duration-300 ease-in-out;
+  }
+  
+  /* Theme toggle animation */
+  @keyframes theme-icon-rotate {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .theme-toggle-icon {
+    @apply transition-transform duration-300;
+  }
+  
+  .theme-toggle-icon-active {
+    animation: theme-icon-rotate 0.5s ease-in-out;
+  }
+  
+  /* Image shine animation */
+  @keyframes image-shine {
+    0% { transform: translateX(-100%); }
+    20%, 100% { transform: translateX(100%); }
+  }
 }
+

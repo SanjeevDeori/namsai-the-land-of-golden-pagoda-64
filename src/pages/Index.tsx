@@ -7,6 +7,7 @@ import Attractions from '../components/Attractions';
 import Cultural from '../components/Cultural';
 import Gallery from '../components/Gallery';
 import Footer from '../components/Footer';
+import { ThemeProvider } from '../hooks/useTheme';
 
 const Index = () => {
   useEffect(() => {
@@ -40,15 +41,17 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white overflow-x-hidden">
-      <Navbar />
-      <Hero />
-      <About />
-      <Attractions />
-      <Cultural />
-      <Gallery />
-      <Footer />
-    </div>
+    <ThemeProvider>
+      <div className="min-h-screen bg-white dark:bg-namsai-900 overflow-x-hidden">
+        <Navbar />
+        <Hero />
+        <About />
+        <Attractions />
+        <Cultural />
+        <Gallery />
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 };
 
