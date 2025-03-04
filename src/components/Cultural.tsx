@@ -37,7 +37,7 @@ const Cultural = () => {
             Vibrant Traditions of Namsai
           </h2>
           <p className="text-namsai-600 text-lg">
-           Experience the rich cultural tapestry woven with vibrant traditions, unique customs, and diverse heritage
+            Experience the rich cultural tapestry of the Tai-Khamti, Singpho, Deori, and Moran communities
           </p>
         </div>
         
