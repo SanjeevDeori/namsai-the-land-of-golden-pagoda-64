@@ -4,7 +4,7 @@
 Made a website for quick overview for the tourism and rich culutral divetrsity of Namsai, Arunachal Pradesh
 
 
-## How can I edit this code?
+## How can you edit this code?
 
 
 
