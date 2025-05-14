@@ -1,4 +1,4 @@
-# Welcome to your Lovable project
+## VIBE CODED 👾
 
 ## Project info
 Made a website for quick overview for the tourism and rich culutral divetrsity of Namsai, Arunachal Pradesh
