@@ -1,8 +1,7 @@
 ## VIBE CODED 👾
 
 ## Project info
-Made a website for quick overview for the tourism and rich culutral divetrsity of Namsai, Arunachal Pradesh
-
+I have created this website that offers a vibrant and quick glimpse into the tourism and rich cultural diversity of Namsai, Arunachal Pradesh — famously known as the Land of the Golden Pagoda. Explore its breathtaking landmarks, colorful traditions, and unique heritage, all in one engaging and easy-to-navigate platform. Perfect for travelers and culture enthusiasts eager to discover the hidden gems of Namsai!
 
 ## How can you edit this code?
 
