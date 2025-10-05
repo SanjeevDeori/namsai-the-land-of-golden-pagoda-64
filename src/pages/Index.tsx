@@ -7,6 +7,7 @@ import Attractions from '../components/Attractions';
 import Cultural from '../components/Cultural';
 import Gallery from '../components/Gallery';
 import Footer from '../components/Footer';
+import LocalGuideChat from '../components/LocalGuideChat';
 import { ThemeProvider } from '../hooks/useTheme';
 
 const Index = () => {
@@ -50,6 +51,7 @@ const Index = () => {
         <Cultural />
         <Gallery />
         <Footer />
+        <LocalGuideChat />
       </div>
     </ThemeProvider>
   );

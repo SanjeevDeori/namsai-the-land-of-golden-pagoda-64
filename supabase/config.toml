@@ -1,0 +1,8 @@
+project_id = "cbckiourfcovvqqilshc"
+
+[auth]
+site_url = "http://localhost:8080"
+enabled = true
+
+[functions.local-guide-chat]
+verify_jwt = false
