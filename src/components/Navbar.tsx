@@ -1,5 +1,6 @@
 
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { useTheme } from '../hooks/useTheme';
 
 const Navbar = () => {
@@ -30,30 +31,35 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           <div className="flex items-center">
-            <a href="#" className={`font-serif font-bold text-xl md:text-2xl tracking-tight ${
+            <Link to="/" className={`font-serif font-bold text-xl md:text-2xl tracking-tight ${
               isScrolled || theme === 'dark' ? 'text-namsai-100' : 'text-namsai-800'
             }`}>
               The Golden Pagoda
-            </a>
+            </Link>
           </div>
           
           <nav className="hidden md:flex space-x-8">
-            <a href="#about" className={`hover:text-namsai-500 transition-colors font-medium ${
+            <a href="/#about" className={`hover:text-namsai-500 transition-colors font-medium ${
               theme === 'dark' ? 'text-namsai-100' : 'text-namsai-700'
             }`}>
-              About Namsai
+              About
             </a>
-            <a href="#attractions" className={`hover:text-namsai-500 transition-colors font-medium ${
+            <a href="/#attractions" className={`hover:text-namsai-500 transition-colors font-medium ${
               theme === 'dark' ? 'text-namsai-100' : 'text-namsai-700'
             }`}>
               Attractions
             </a>
-            <a href="#culture" className={`hover:text-namsai-500 transition-colors font-medium ${
+            <Link to="/travel-info" className={`hover:text-namsai-500 transition-colors font-medium ${
               theme === 'dark' ? 'text-namsai-100' : 'text-namsai-700'
             }`}>
-              Culture
-            </a>
-            <a href="#gallery" className={`hover:text-namsai-500 transition-colors font-medium ${
+              Travel Info
+            </Link>
+            <Link to="/accommodations" className={`hover:text-namsai-500 transition-colors font-medium ${
+              theme === 'dark' ? 'text-namsai-100' : 'text-namsai-700'
+            }`}>
+              Stay
+            </Link>
+            <a href="/#gallery" className={`hover:text-namsai-500 transition-colors font-medium ${
               theme === 'dark' ? 'text-namsai-100' : 'text-namsai-700'
             }`}>
               Gallery
