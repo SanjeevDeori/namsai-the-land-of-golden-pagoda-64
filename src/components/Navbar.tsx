@@ -49,15 +49,25 @@ const Navbar = () => {
             }`}>
               Attractions
             </a>
+            <Link to="/itineraries" className={`hover:text-namsai-500 transition-colors font-medium ${
+              theme === 'dark' ? 'text-namsai-100' : 'text-namsai-700'
+            }`}>
+              Itineraries
+            </Link>
+            <Link to="/events" className={`hover:text-namsai-500 transition-colors font-medium ${
+              theme === 'dark' ? 'text-namsai-100' : 'text-namsai-700'
+            }`}>
+              Events
+            </Link>
+            <Link to="/blog" className={`hover:text-namsai-500 transition-colors font-medium ${
+              theme === 'dark' ? 'text-namsai-100' : 'text-namsai-700'
+            }`}>
+              Blog
+            </Link>
             <Link to="/travel-info" className={`hover:text-namsai-500 transition-colors font-medium ${
               theme === 'dark' ? 'text-namsai-100' : 'text-namsai-700'
             }`}>
-              Travel Info
-            </Link>
-            <Link to="/accommodations" className={`hover:text-namsai-500 transition-colors font-medium ${
-              theme === 'dark' ? 'text-namsai-100' : 'text-namsai-700'
-            }`}>
-              Stay
+              Info
             </Link>
             <a href="/#gallery" className={`hover:text-namsai-500 transition-colors font-medium ${
               theme === 'dark' ? 'text-namsai-100' : 'text-namsai-700'

@@ -7,6 +7,7 @@ import Attractions from '../components/Attractions';
 import Cultural from '../components/Cultural';
 import Gallery from '../components/Gallery';
 import InteractiveMap from '../components/InteractiveMap';
+import Reviews from '../components/Reviews';
 import Footer from '../components/Footer';
 import LocalGuideChat from '../components/LocalGuideChat';
 import { ThemeProvider } from '../hooks/useTheme';
@@ -49,11 +50,12 @@ const Index = () => {
         <Hero />
         <About />
         <Attractions />
-        <Cultural />
-        <InteractiveMap />
-        <Gallery />
-        <Footer />
-        <LocalGuideChat />
+      <Cultural />
+      <InteractiveMap />
+      <Reviews />
+      <Gallery />
+      <Footer />
+      <LocalGuideChat />
       </div>
     </ThemeProvider>
   );

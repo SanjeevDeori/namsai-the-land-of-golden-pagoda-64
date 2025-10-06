@@ -14,48 +14,141 @@ export type Database = {
   }
   public: {
     Tables: {
-      accommodations: {
+      blog_posts: {
         Row: {
-          amenities: string[] | null
-          contact_email: string | null
-          contact_phone: string | null
+          author: string
+          category: string | null
+          content: string
           created_at: string | null
-          description: string | null
+          excerpt: string | null
+          featured_image: string | null
           id: string
-          image_url: string | null
-          location: string
-          name: string
-          price_range: string | null
-          rating: number | null
-          type: string
+          published_at: string | null
+          slug: string
+          title: string
         }
         Insert: {
-          amenities?: string[] | null
-          contact_email?: string | null
-          contact_phone?: string | null
+          author: string
+          category?: string | null
+          content: string
           created_at?: string | null
-          description?: string | null
+          excerpt?: string | null
+          featured_image?: string | null
           id?: string
-          image_url?: string | null
-          location: string
-          name: string
-          price_range?: string | null
-          rating?: number | null
-          type: string
+          published_at?: string | null
+          slug: string
+          title: string
         }
         Update: {
-          amenities?: string[] | null
-          contact_email?: string | null
-          contact_phone?: string | null
+          author?: string
+          category?: string | null
+          content?: string
+          created_at?: string | null
+          excerpt?: string | null
+          featured_image?: string | null
+          id?: string
+          published_at?: string | null
+          slug?: string
+          title?: string
+        }
+        Relationships: []
+      }
+      events: {
+        Row: {
+          created_at: string | null
+          description: string | null
+          event_date: string
+          event_type: string | null
+          id: string
+          image_url: string | null
+          location: string | null
+          title: string
+        }
+        Insert: {
           created_at?: string | null
           description?: string | null
+          event_date: string
+          event_type?: string | null
           id?: string
           image_url?: string | null
-          location?: string
-          name?: string
-          price_range?: string | null
-          rating?: number | null
-          type?: string
+          location?: string | null
+          title: string
+        }
+        Update: {
+          created_at?: string | null
+          description?: string | null
+          event_date?: string
+          event_type?: string | null
+          id?: string
+          image_url?: string | null
+          location?: string | null
+          title?: string
+        }
+        Relationships: []
+      }
+      itineraries: {
+        Row: {
+          activities: string[] | null
+          created_at: string | null
+          description: string | null
+          duration: string
+          highlights: string[] | null
+          id: string
+          is_featured: boolean | null
+          title: string
+        }
+        Insert: {
+          activities?: string[] | null
+          created_at?: string | null
+          description?: string | null
+          duration: string
+          highlights?: string[] | null
+          id?: string
+          is_featured?: boolean | null
+          title: string
+        }
+        Update: {
+          activities?: string[] | null
+          created_at?: string | null
+          description?: string | null
+          duration?: string
+          highlights?: string[] | null
+          id?: string
+          is_featured?: boolean | null
+          title?: string
+        }
+        Relationships: []
+      }
+      reviews: {
+        Row: {
+          attraction_name: string
+          author_email: string | null
+          author_name: string
+          comment: string | null
+          created_at: string | null
+          id: string
+          is_approved: boolean | null
+          rating: number
+        }
+        Insert: {
+          attraction_name: string
+          author_email?: string | null
+          author_name: string
+          comment?: string | null
+          created_at?: string | null
+          id?: string
+          is_approved?: boolean | null
+          rating: number
+        }
+        Update: {
+          attraction_name?: string
+          author_email?: string | null
+          author_name?: string
+          comment?: string | null
+          created_at?: string | null
+          id?: string
+          is_approved?: boolean | null
+          rating?: number
         }
         Relationships: []
       }
