@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import { Badge } from '@/components/ui/badge';
 import { ArrowLeft } from 'lucide-react';
 import { format } from 'date-fns';
+import { ThemeProvider } from '@/hooks/useTheme';
 
 interface BlogPost {
   id: string;
@@ -44,30 +45,35 @@ const BlogPost = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-b from-namsai-50 to-white dark:from-namsai-900 dark:to-namsai-800">
-        <Navbar />
-        <div className="container mx-auto px-4 pt-24 text-center">Loading...</div>
-      </div>
+      <ThemeProvider>
+        <div className="min-h-screen bg-gradient-to-b from-namsai-50 to-white dark:from-namsai-900 dark:to-namsai-800">
+          <Navbar />
+          <div className="container mx-auto px-4 pt-24 text-center">Loading...</div>
+        </div>
+      </ThemeProvider>
     );
   }
 
   if (!post) {
     return (
-      <div className="min-h-screen bg-gradient-to-b from-namsai-50 to-white dark:from-namsai-900 dark:to-namsai-800">
-        <Navbar />
-        <div className="container mx-auto px-4 pt-24 text-center">
-          <h1 className="text-2xl font-bold mb-4">Article not found</h1>
-          <Link to="/blog" className="text-namsai-600 hover:underline">
-            Back to blog
-          </Link>
+      <ThemeProvider>
+        <div className="min-h-screen bg-gradient-to-b from-namsai-50 to-white dark:from-namsai-900 dark:to-namsai-800">
+          <Navbar />
+          <div className="container mx-auto px-4 pt-24 text-center">
+            <h1 className="text-2xl font-bold mb-4">Article not found</h1>
+            <Link to="/blog" className="text-namsai-600 hover:underline">
+              Back to blog
+            </Link>
+          </div>
         </div>
-      </div>
+      </ThemeProvider>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-namsai-50 to-white dark:from-namsai-900 dark:to-namsai-800">
-      <Navbar />
+    <ThemeProvider>
+      <div className="min-h-screen bg-gradient-to-b from-namsai-50 to-white dark:from-namsai-900 dark:to-namsai-800">
+        <Navbar />
       
       <main className="container mx-auto px-4 pt-24 pb-16">
         <article className="max-w-3xl mx-auto">
@@ -102,8 +108,9 @@ const BlogPost = () => {
         </article>
       </main>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 };
 

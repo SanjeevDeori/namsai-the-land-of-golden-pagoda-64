@@ -6,6 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { Calendar, MapPin } from 'lucide-react';
 import { format } from 'date-fns';
+import { ThemeProvider } from '@/hooks/useTheme';
 
 interface Event {
   id: string;
@@ -47,8 +48,9 @@ const Events = () => {
   const eventTypes = [...new Set(events.map(e => e.event_type).filter(Boolean))];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-namsai-50 to-white dark:from-namsai-900 dark:to-namsai-800">
-      <Navbar />
+    <ThemeProvider>
+      <div className="min-h-screen bg-gradient-to-b from-namsai-50 to-white dark:from-namsai-900 dark:to-namsai-800">
+        <Navbar />
       
       <main className="container mx-auto px-4 pt-24 pb-16">
         <div className="max-w-6xl mx-auto">
@@ -119,8 +121,9 @@ const Events = () => {
         </div>
       </main>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 };
 
