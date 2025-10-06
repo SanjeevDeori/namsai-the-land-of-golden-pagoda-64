@@ -87,30 +87,31 @@ const Events = () => {
             <div className="text-center py-12">Loading events...</div>
           ) : (
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {filteredEvents.map((event) => (
-                <Card key={event.id} className="hover:shadow-xl transition-shadow">
-                  <CardHeader>
-                    <div className="flex items-center justify-between mb-2">
-                      <Badge variant="secondary" className="flex items-center gap-1">
-                        <Calendar className="h-3 w-3" />
-                        {format(new Date(event.event_date), 'MMM dd, yyyy')}
+              {filteredEvents.map((event, idx) => (
+                <Card key={event.id} className="hover-lift shadow-soft border-0 overflow-hidden group animate-fade-in" style={{ animationDelay: `${idx * 100}ms` }}>
+                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-accent"></div>
+                  <CardHeader className="pb-3">
+                    <div className="flex items-center justify-between mb-3">
+                      <Badge variant="secondary" className="flex items-center gap-1.5 px-3 py-1">
+                        <Calendar className="h-3.5 w-3.5" />
+                        <span className="text-xs font-medium">{format(new Date(event.event_date), 'MMM dd, yyyy')}</span>
                       </Badge>
                       {event.event_type && (
-                        <Badge variant="outline">{event.event_type}</Badge>
+                        <Badge variant="outline" className="text-xs">{event.event_type}</Badge>
                       )}
                     </div>
-                    <CardTitle className="text-xl">{event.title}</CardTitle>
+                    <CardTitle className="text-xl font-serif group-hover:text-primary transition-colors">{event.title}</CardTitle>
                   </CardHeader>
                   
                   <CardContent>
-                    <CardDescription className="mb-4">
+                    <CardDescription className="mb-4 line-clamp-3 text-muted-foreground">
                       {event.description}
                     </CardDescription>
                     
                     {event.location && (
-                      <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                        <MapPin className="h-4 w-4" />
-                        {event.location}
+                      <div className="flex items-center gap-2 text-sm text-muted-foreground mt-4 pt-4 border-t border-border">
+                        <MapPin className="h-4 w-4 text-primary flex-shrink-0" />
+                        <span>{event.location}</span>
                       </div>
                     )}
                   </CardContent>

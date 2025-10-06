@@ -154,8 +154,14 @@ export default {
         'hero-pattern': "url('https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?q=80&w=1974')",
       },
       fontFamily: {
-        'sans': ['Inter', 'system-ui', 'sans-serif'],
+        'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
         'serif': ['Playfair Display', 'Georgia', 'serif'],
+        'display': ['Poppins', 'Inter', 'sans-serif'],
+      },
+      boxShadow: {
+        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.08)',
+        'glow': '0 0 40px rgba(251, 191, 36, 0.15)',
+        'glow-lg': '0 0 60px rgba(251, 191, 36, 0.25)',
       },
     }
   },

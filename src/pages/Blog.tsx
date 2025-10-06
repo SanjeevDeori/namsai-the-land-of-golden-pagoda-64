@@ -62,31 +62,32 @@ const Blog = () => {
             <div className="text-center py-12">Loading articles...</div>
           ) : (
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {posts.map((post) => (
-                <Link key={post.id} to={`/blog/${post.slug}`}>
-                  <Card className="h-full hover:shadow-xl transition-shadow cursor-pointer">
-                    <CardHeader>
-                      <div className="flex items-center justify-between mb-2">
+              {posts.map((post, idx) => (
+                <Link key={post.id} to={`/blog/${post.slug}`} className="group animate-fade-in" style={{ animationDelay: `${idx * 100}ms` }}>
+                  <Card className="h-full hover-lift shadow-soft border-0 overflow-hidden">
+                    <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-full blur-2xl group-hover:bg-primary/10 transition-all duration-500"></div>
+                    <CardHeader className="relative">
+                      <div className="flex items-center justify-between mb-3">
                         {post.category && (
-                          <Badge variant="secondary">{post.category}</Badge>
+                          <Badge className="gradient-gold text-foreground font-medium">{post.category}</Badge>
                         )}
-                        <span className="text-xs text-muted-foreground">
+                        <span className="text-xs text-muted-foreground font-medium">
                           {format(new Date(post.published_at), 'MMM dd, yyyy')}
                         </span>
                       </div>
-                      <CardTitle className="text-xl hover:text-namsai-600 transition-colors">
+                      <CardTitle className="text-xl font-serif group-hover:text-primary transition-colors leading-tight">
                         {post.title}
                       </CardTitle>
                     </CardHeader>
                     
                     <CardContent>
-                      <CardDescription className="mb-4 line-clamp-3">
+                      <CardDescription className="mb-5 line-clamp-3 text-muted-foreground leading-relaxed">
                         {post.excerpt}
                       </CardDescription>
                       
-                      <div className="flex items-center justify-between text-sm">
+                      <div className="flex items-center justify-between text-sm pt-4 border-t border-border">
                         <span className="text-muted-foreground">By {post.author}</span>
-                        <span className="flex items-center gap-1 text-namsai-600 dark:text-namsai-400">
+                        <span className="flex items-center gap-1.5 text-primary group-hover:gap-2.5 transition-all font-medium">
                           Read more <ArrowRight className="h-4 w-4" />
                         </span>
                       </div>

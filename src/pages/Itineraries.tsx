@@ -59,44 +59,48 @@ const Itineraries = () => {
             <div className="text-center py-12">Loading itineraries...</div>
           ) : (
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {itineraries.map((itinerary) => (
-                <Card key={itinerary.id} className="hover:shadow-xl transition-shadow">
-                  <CardHeader>
-                    <div className="flex items-center justify-between mb-2">
-                      <Badge variant="secondary" className="flex items-center gap-1">
-                        <Calendar className="h-3 w-3" />
-                        {itinerary.duration}
+              {itineraries.map((itinerary, idx) => (
+                <Card key={itinerary.id} className="hover-lift shadow-soft border-0 bg-card overflow-hidden group">
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full blur-3xl group-hover:bg-primary/10 transition-all duration-500"></div>
+                  <CardHeader className="relative">
+                    <div className="flex items-center justify-between mb-3">
+                      <Badge variant="secondary" className="flex items-center gap-1.5 px-3 py-1.5">
+                        <Calendar className="h-3.5 w-3.5" />
+                        <span className="font-medium">{itinerary.duration}</span>
                       </Badge>
                       {itinerary.is_featured && (
-                        <Badge variant="default">Featured</Badge>
+                        <Badge className="gradient-gold text-foreground font-semibold">⭐ Featured</Badge>
                       )}
                     </div>
-                    <CardTitle className="text-2xl">{itinerary.title}</CardTitle>
-                    <CardDescription>{itinerary.description}</CardDescription>
+                    <CardTitle className="text-2xl font-serif group-hover:text-primary transition-colors">{itinerary.title}</CardTitle>
+                    <CardDescription className="text-base mt-2">{itinerary.description}</CardDescription>
                   </CardHeader>
                   
-                  <CardContent>
-                    <div className="space-y-4">
+                  <CardContent className="relative">
+                    <div className="space-y-5">
                       <div>
-                        <h4 className="font-semibold flex items-center gap-2 mb-2">
-                          <MapPin className="h-4 w-4 text-namsai-600" />
+                        <h4 className="font-semibold flex items-center gap-2 mb-3 text-foreground">
+                          <MapPin className="h-4 w-4 text-primary" />
                           Highlights
                         </h4>
-                        <ul className="list-disc list-inside space-y-1 text-sm">
+                        <ul className="space-y-2 text-sm">
                           {itinerary.highlights?.map((highlight, idx) => (
-                            <li key={idx}>{highlight}</li>
+                            <li key={idx} className="flex items-start gap-2">
+                              <span className="text-primary mt-1">•</span>
+                              <span className="text-muted-foreground">{highlight}</span>
+                            </li>
                           ))}
                         </ul>
                       </div>
                       
                       <div>
-                        <h4 className="font-semibold flex items-center gap-2 mb-2">
-                          <Activity className="h-4 w-4 text-namsai-600" />
+                        <h4 className="font-semibold flex items-center gap-2 mb-3 text-foreground">
+                          <Activity className="h-4 w-4 text-primary" />
                           Activities
                         </h4>
                         <div className="flex flex-wrap gap-2">
                           {itinerary.activities?.map((activity, idx) => (
-                            <Badge key={idx} variant="outline">{activity}</Badge>
+                            <Badge key={idx} variant="outline" className="hover:bg-primary/10 transition-colors">{activity}</Badge>
                           ))}
                         </div>
                       </div>
