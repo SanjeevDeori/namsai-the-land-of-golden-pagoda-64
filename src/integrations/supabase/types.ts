@@ -57,32 +57,68 @@ export type Database = {
         Row: {
           created_at: string | null
           description: string | null
-          event_date: string
           event_type: string | null
           id: string
           image_url: string | null
           location: string | null
+          significance: string | null
           title: string
+          typical_month: string | null
         }
         Insert: {
           created_at?: string | null
           description?: string | null
-          event_date: string
           event_type?: string | null
           id?: string
           image_url?: string | null
           location?: string | null
+          significance?: string | null
           title: string
+          typical_month?: string | null
         }
         Update: {
           created_at?: string | null
           description?: string | null
-          event_date?: string
           event_type?: string | null
           id?: string
           image_url?: string | null
           location?: string | null
+          significance?: string | null
           title?: string
+          typical_month?: string | null
+        }
+        Relationships: []
+      }
+      gallery_photos: {
+        Row: {
+          created_at: string | null
+          description: string
+          id: string
+          image_url: string
+          is_anonymous: boolean | null
+          is_approved: boolean | null
+          location: string | null
+          photographer_name: string | null
+        }
+        Insert: {
+          created_at?: string | null
+          description: string
+          id?: string
+          image_url: string
+          is_anonymous?: boolean | null
+          is_approved?: boolean | null
+          location?: string | null
+          photographer_name?: string | null
+        }
+        Update: {
+          created_at?: string | null
+          description?: string
+          id?: string
+          image_url?: string
+          is_anonymous?: boolean | null
+          is_approved?: boolean | null
+          location?: string | null
+          photographer_name?: string | null
         }
         Relationships: []
       }

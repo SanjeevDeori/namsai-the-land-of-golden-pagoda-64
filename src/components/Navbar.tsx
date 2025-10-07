@@ -2,6 +2,8 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useTheme } from '../hooks/useTheme';
+import SearchBar from './SearchBar';
+import LanguageSelector from './LanguageSelector';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -98,6 +100,12 @@ const Navbar = () => {
                 </svg>
               )}
             </button>
+            <div className={isScrolled ? '' : '[&_button]:!text-white'}>
+              <SearchBar />
+            </div>
+            <div className={isScrolled ? '' : '[&_button]:!text-white'}>
+              <LanguageSelector />
+            </div>
           </nav>
           
           <div className="md:hidden flex items-center space-x-3">

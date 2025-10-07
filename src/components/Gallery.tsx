@@ -1,7 +1,9 @@
-
 import { useEffect, useRef, useState } from 'react';
+import { supabase } from '@/integrations/supabase/client';
+import GalleryUploadForm from './GalleryUploadForm';
+import { Skeleton } from '@/components/ui/skeleton';
 
-const images = [
+const curatedImages = [
   {
     id: 1,
     src: "/lovable-uploads/a1e0c0f0-07fa-4532-85d7-4111421c04a6.png",
@@ -40,10 +42,51 @@ const images = [
   },
 ];
 
+interface GalleryPhoto {
+  id: string;
+  image_url: string;
+  photographer_name: string | null;
+  description: string;
+  location: string | null;
+}
+
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
+  const [userPhotos, setUserPhotos] = useState<GalleryPhoto[]>([]);
+  const [loading, setLoading] = useState(true);
   const sectionRef = useRef<HTMLElement>(null);
+
+  // Combine curated and user photos
+  const allImages = [
+    ...curatedImages,
+    ...userPhotos.map(photo => ({
+      id: parseInt(photo.id.slice(0, 8), 16),
+      src: photo.image_url,
+      alt: photo.description,
+      caption: photo.photographer_name 
+        ? `${photo.description} - Photo by ${photo.photographer_name}`
+        : photo.description,
+    }))
+  ];
   
+  // Fetch user-uploaded photos
+  useEffect(() => {
+    const fetchUserPhotos = async () => {
+      const { data, error } = await supabase
+        .from('gallery_photos')
+        .select('*')
+        .eq('is_approved', true)
+        .order('created_at', { ascending: false });
+
+      if (!error && data) {
+        setUserPhotos(data);
+      }
+      setLoading(false);
+    };
+
+    fetchUserPhotos();
+  }, []);
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -79,7 +122,7 @@ const Gallery = () => {
   const navigateImage = (direction: number) => {
     if (selectedImage === null) return;
     
-    const newIndex = (selectedImage + direction + images.length) % images.length;
+    const newIndex = (selectedImage + direction + allImages.length) % allImages.length;
     setSelectedImage(newIndex);
   };
 
@@ -108,12 +151,25 @@ const Gallery = () => {
             Glimpses of Namsai
           </h2>
           <p className="text-namsai-600 text-lg">
-            Explore the beauty and culture of Namsai through our curated photo gallery
+            Explore the beauty and culture of Namsai through photos from our community
           </p>
         </div>
+
+        {/* Upload Form */}
+        <div className="mb-12 max-w-2xl mx-auto">
+          <GalleryUploadForm />
+        </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {images.map((image, index) => (
+        {/* Gallery Grid */}
+        {loading ? (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[1, 2, 3, 4, 5, 6].map((n) => (
+              <Skeleton key={n} className="aspect-[4/3] rounded-xl" />
+            ))}
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {allImages.map((image, index) => (
             <div 
               key={image.id} 
               className="relative rounded-xl overflow-hidden shadow-lg cursor-pointer group opacity-0 animate-on-scroll"
@@ -141,20 +197,10 @@ const Gallery = () => {
                 </div>
               </div>
             </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        )}
         
-        <div className="mt-12 text-center opacity-0 animate-on-scroll">
-          <a 
-            href="#" 
-            className="inline-flex items-center justify-center rounded-full bg-namsai-700 text-white hover:bg-namsai-600 px-6 py-3 font-medium transition-colors duration-300 shadow-md hover:shadow-lg"
-          >
-            View Complete Gallery
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-              <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-            </svg>
-          </a>
-        </div>
       </div>
       
       {/* Lightbox */}
@@ -181,8 +227,8 @@ const Gallery = () => {
             
             <div className="h-full max-h-[80vh] flex items-center">
               <img 
-                src={images[selectedImage].src} 
-                alt={images[selectedImage].alt} 
+                src={allImages[selectedImage].src} 
+                alt={allImages[selectedImage].alt} 
                 className="max-w-full max-h-full object-contain mx-auto"
               />
             </div>
@@ -197,8 +243,8 @@ const Gallery = () => {
             </button>
             
             <div className="absolute bottom-4 left-0 right-0 text-center text-white">
-              <p className="text-lg font-medium">{images[selectedImage].caption}</p>
-              <p className="text-sm text-white/70">{selectedImage + 1} of {images.length}</p>
+              <p className="text-lg font-medium">{allImages[selectedImage].caption}</p>
+              <p className="text-sm text-white/70">{selectedImage + 1} of {allImages.length}</p>
             </div>
           </div>
         </div>

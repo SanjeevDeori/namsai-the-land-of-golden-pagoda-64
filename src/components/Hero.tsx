@@ -20,7 +20,7 @@ const Hero = () => {
         
         <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif font-bold text-white opacity-0 animate-slide-in animate-delay-100 max-w-6xl leading-tight mb-6" style={{ textShadow: '0 8px 32px rgba(0,0,0,0.3)' }}>
           Namsai
-          <span className="block text-gradient-gold drop-shadow-2xl">The Golden Pagoda</span>
+          <span className="block text-gradient-gold drop-shadow-2xl">The Land of Golden Pagoda</span>
         </h1>
         
         <p className="mt-4 max-w-3xl text-xl sm:text-2xl text-white/95 opacity-0 animate-slide-in animate-delay-200 leading-relaxed" style={{ textShadow: '0 4px 12px rgba(0,0,0,0.4)' }}>

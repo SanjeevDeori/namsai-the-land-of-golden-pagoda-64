@@ -4,48 +4,48 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Calendar, MapPin } from 'lucide-react';
-import { format } from 'date-fns';
+import { Calendar, MapPin, Sparkles } from 'lucide-react';
 import { ThemeProvider } from '@/hooks/useTheme';
 
-interface Event {
+interface Festival {
   id: string;
   title: string;
   description: string;
-  event_date: string;
+  typical_month: string;
   event_type: string;
   location: string;
+  significance: string | null;
   image_url: string | null;
 }
 
 const Events = () => {
-  const [events, setEvents] = useState<Event[]>([]);
+  const [festivals, setFestivals] = useState<Festival[]>([]);
   const [loading, setLoading] = useState(true);
   const [filter, setFilter] = useState<string>('all');
 
   useEffect(() => {
-    fetchEvents();
+    fetchFestivals();
   }, []);
 
-  const fetchEvents = async () => {
+  const fetchFestivals = async () => {
     const { data, error } = await supabase
       .from('events')
       .select('*')
-      .order('event_date', { ascending: true });
+      .order('title', { ascending: true });
 
     if (error) {
-      console.error('Error fetching events:', error);
+      console.error('Error fetching festivals:', error);
     } else {
-      setEvents(data || []);
+      setFestivals(data || []);
     }
     setLoading(false);
   };
 
-  const filteredEvents = filter === 'all' 
-    ? events 
-    : events.filter(e => e.event_type?.toLowerCase() === filter);
+  const filteredFestivals = filter === 'all' 
+    ? festivals 
+    : festivals.filter(f => f.event_type?.toLowerCase() === filter);
 
-  const eventTypes = [...new Set(events.map(e => e.event_type).filter(Boolean))];
+  const festivalTypes = [...new Set(festivals.map(f => f.event_type).filter(Boolean))];
 
   return (
     <ThemeProvider>
@@ -59,7 +59,7 @@ const Events = () => {
               Events & Festivals
             </h1>
             <p className="text-lg text-namsai-600 dark:text-namsai-300 mb-6">
-              Experience the vibrant culture and traditions of Namsai
+              Discover the vibrant festivals and cultural celebrations throughout the year
             </p>
             
             <div className="flex justify-center gap-2 flex-wrap">
@@ -68,9 +68,9 @@ const Events = () => {
                 className="cursor-pointer"
                 onClick={() => setFilter('all')}
               >
-                All Events
+                All Festivals
               </Badge>
-              {eventTypes.map(type => (
+              {festivalTypes.map(type => (
                 <Badge 
                   key={type}
                   variant={filter === type.toLowerCase() ? 'default' : 'outline'}
@@ -84,34 +84,42 @@ const Events = () => {
           </div>
 
           {loading ? (
-            <div className="text-center py-12">Loading events...</div>
+            <div className="text-center py-12">Loading festivals...</div>
           ) : (
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {filteredEvents.map((event, idx) => (
-                <Card key={event.id} className="hover-lift shadow-soft border-0 overflow-hidden group animate-fade-in" style={{ animationDelay: `${idx * 100}ms` }}>
+            <div className="grid md:grid-cols-2 gap-6">
+              {filteredFestivals.map((festival, idx) => (
+                <Card key={festival.id} className="hover-lift shadow-soft border-0 overflow-hidden group animate-fade-in" style={{ animationDelay: `${idx * 100}ms` }}>
                   <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-accent"></div>
-                  <CardHeader className="pb-3">
-                    <div className="flex items-center justify-between mb-3">
+                  <CardHeader className="pb-4">
+                    <div className="flex items-center justify-between mb-3 flex-wrap gap-2">
                       <Badge variant="secondary" className="flex items-center gap-1.5 px-3 py-1">
                         <Calendar className="h-3.5 w-3.5" />
-                        <span className="text-xs font-medium">{format(new Date(event.event_date), 'MMM dd, yyyy')}</span>
+                        <span className="text-xs font-medium">{festival.typical_month}</span>
                       </Badge>
-                      {event.event_type && (
-                        <Badge variant="outline" className="text-xs">{event.event_type}</Badge>
+                      {festival.event_type && (
+                        <Badge variant="outline" className="text-xs">{festival.event_type}</Badge>
                       )}
                     </div>
-                    <CardTitle className="text-xl font-serif group-hover:text-primary transition-colors">{event.title}</CardTitle>
+                    <CardTitle className="text-2xl font-serif group-hover:text-primary transition-colors mb-2">
+                      {festival.title}
+                    </CardTitle>
+                    {festival.significance && (
+                      <div className="flex items-start gap-2 text-sm text-muted-foreground bg-accent/10 p-3 rounded-lg mt-3">
+                        <Sparkles className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                        <p className="italic">{festival.significance}</p>
+                      </div>
+                    )}
                   </CardHeader>
                   
                   <CardContent>
-                    <CardDescription className="mb-4 line-clamp-3 text-muted-foreground">
-                      {event.description}
+                    <CardDescription className="mb-4 text-base leading-relaxed">
+                      {festival.description}
                     </CardDescription>
                     
-                    {event.location && (
+                    {festival.location && (
                       <div className="flex items-center gap-2 text-sm text-muted-foreground mt-4 pt-4 border-t border-border">
                         <MapPin className="h-4 w-4 text-primary flex-shrink-0" />
-                        <span>{event.location}</span>
+                        <span>{festival.location}</span>
                       </div>
                     )}
                   </CardContent>
