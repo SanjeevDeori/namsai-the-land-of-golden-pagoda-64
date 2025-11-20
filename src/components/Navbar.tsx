@@ -4,9 +4,11 @@ import { Link } from 'react-router-dom';
 import { useTheme } from '../hooks/useTheme';
 import SearchBar from './SearchBar';
 import LanguageSelector from './LanguageSelector';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { theme, toggleTheme } = useTheme();
   
   useEffect(() => {
@@ -128,15 +130,77 @@ const Navbar = () => {
                 </svg>
               )}
             </button>
-            <button className={`flex items-center p-2 rounded-full transition-all duration-300 hover:scale-110 ${
-              isScrolled 
-                ? 'bg-secondary' 
-                : 'bg-white/20 backdrop-blur-sm'
-            }`}>
-              <svg xmlns="http://www.w3.org/2000/svg" className={`h-6 w-6 ${isScrolled ? 'text-foreground' : 'text-white'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
+            
+            <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
+              <SheetTrigger asChild>
+                <button className={`flex items-center p-2 rounded-full transition-all duration-300 hover:scale-110 ${
+                  isScrolled 
+                    ? 'bg-secondary' 
+                    : 'bg-white/20 backdrop-blur-sm'
+                }`}>
+                  <svg xmlns="http://www.w3.org/2000/svg" className={`h-6 w-6 ${isScrolled ? 'text-foreground' : 'text-white'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                </button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+                <nav className="flex flex-col space-y-4 mt-8">
+                  <a 
+                    href="/#about" 
+                    className="text-lg font-medium text-foreground hover:text-primary transition-colors py-2"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    About
+                  </a>
+                  <a 
+                    href="/#attractions" 
+                    className="text-lg font-medium text-foreground hover:text-primary transition-colors py-2"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Attractions
+                  </a>
+                  <Link 
+                    to="/itineraries" 
+                    className="text-lg font-medium text-foreground hover:text-primary transition-colors py-2"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Itineraries
+                  </Link>
+                  <Link 
+                    to="/events" 
+                    className="text-lg font-medium text-foreground hover:text-primary transition-colors py-2"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Events
+                  </Link>
+                  <Link 
+                    to="/blog" 
+                    className="text-lg font-medium text-foreground hover:text-primary transition-colors py-2"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Blog
+                  </Link>
+                  <Link 
+                    to="/travel-info" 
+                    className="text-lg font-medium text-foreground hover:text-primary transition-colors py-2"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Info
+                  </Link>
+                  <a 
+                    href="/#gallery" 
+                    className="text-lg font-medium text-foreground hover:text-primary transition-colors py-2"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Gallery
+                  </a>
+                  <div className="pt-4 border-t border-border flex items-center space-x-4">
+                    <SearchBar />
+                    <LanguageSelector />
+                  </div>
+                </nav>
+              </SheetContent>
+            </Sheet>
           </div>
         </div>
       </div>
