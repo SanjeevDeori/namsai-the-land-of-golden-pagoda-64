@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import GalleryUploadForm from './GalleryUploadForm';
 
 const images = [
   {
@@ -109,6 +110,11 @@ const Gallery = () => {
           <p className="text-namsai-600 text-lg">
             Explore the beauty and culture of Namsai through photos from our community
           </p>
+        </div>
+
+        {/* Upload Form */}
+        <div className="mb-12 max-w-2xl mx-auto opacity-0 animate-on-scroll">
+          <GalleryUploadForm />
         </div>
 
         {/* Gallery Grid */}
